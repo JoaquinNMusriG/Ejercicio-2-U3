@@ -39,7 +39,7 @@ class ManejaHelados:
         arreglo = np.zeros(sabores.getCantSabores())
         for helado in self.__Helados:
             helado.contarSabores(arreglo)
-        sabores.mostrarNombre5(arreglo)            
+        sabores.mostrarNombre5(arreglo)
 
     def estimarGramosSabor(self,num):
         total = 0.0
@@ -55,8 +55,3 @@ class ManejaHelados:
             if helado.getGramos() == tipo:
                 helado.buscarSabores(arreglo)
         sabores.mostrarSabores(arreglo)
-
-    def mostrarHelados(self):
-        for helado in self.__Helados:
-            print('---------------')
-            print(helado)

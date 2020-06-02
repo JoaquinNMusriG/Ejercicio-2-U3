@@ -37,7 +37,6 @@ class ManejaSabores:
             indice = np.where(arreglo == np.amax(arreglo))
             print(self.__sabores[indice[0][0]].getNombre())
             arreglo[indice[0][0]] = -1
-            #arreglo = np.delete(arreglo, indice[0][0])
 
     def mostrarSabores(self, arreglo):
         for i in range(self.getCantSabores()):
